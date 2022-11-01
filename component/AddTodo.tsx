@@ -9,7 +9,7 @@ const AddTodo = () => {
     const itemTodo = useAppSelector((state) => state.itemTodo);
     const handleSubmit = () => {
         if (itemTodo.trim() == "") {
-            alert("fdsfas");
+            alert("chưa nhập dữ liệu ");
             return;
         }
         dispatch(updateTodo({ name: itemTodo, checked: false }));
